@@ -2,6 +2,11 @@
 creating ec2 instance with apache using Ansible.
 
 1)Clone this repo to your any directory 
+Do not forget to  change your variables in groups_vars and this values in site.yml
+keypair: myansible 
+ansible_user: ec2-user
+ansible_ssh_private_key_file: ~/.ssh/myansible.pem
+      
 
 2) Configure dynamic host inventary for ansible as mentioned bellow: 
 https://aws.amazon.com/blogs/apn/getting-started-with-ansible-and-dynamic-amazon-ec2-inventory-management/
