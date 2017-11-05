@@ -1,0 +1,9 @@
+instance_type: t2.micro
+security_group: testing_security_group #(optional) Change the security group name here
+image: ami-c998b6b2 # This is an RedHat
+keypair: myansible # This is one of my keys that i already have in AWS
+region: us-east-1 #(optional) Change the Region 
+subnet: subnet-9c8e23a3 # Subnet us-east-1e 
+count: 1
+project_name: testing 
+#kindly note if you change theregion you shouch change all other parameters like subnet,image and check that you have key-pair in this  

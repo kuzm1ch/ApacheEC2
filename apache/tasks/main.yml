@@ -1,0 +1,8 @@
+- name: Installs aapche web server
+  yum: name=httpd state=installed
+  notify:
+    - start apache
+
+#- name: Upload default index.html for host
+#copy: src=static_files/index.html dest=/usr/share/nginx/www/ mode=0644 this is optional
+#need to recheck 
